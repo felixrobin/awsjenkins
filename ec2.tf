@@ -1,3 +1,5 @@
+
+
 resource "aws_instance" "myproject-first-ec2" {
     ami = "ami-00785f4835c6acf64"
     instance_type = "t2.micro"
@@ -6,10 +8,10 @@ resource "aws_instance" "myproject-first-ec2" {
   }
 }
 
-resource "aws_instance" "myproject-second-ec2" {
-    ami = "ami-00785f4835c6acf64"
-    instance_type = "t2.micro"
-    tags = {
-    bu = "aws-via-jenkins20"
-  }
-}
+# resource "aws_instance" "myproject-second-ec2" {
+#     ami = "ami-00785f4835c6acf64"
+#     instance_type = "t2.micro"
+#     tags = {
+#     bu = "aws-via-jenkins20"
+#   }
+# }
